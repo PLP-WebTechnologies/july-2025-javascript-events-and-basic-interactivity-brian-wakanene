@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Web Page</title>
+    <link rel="stylesheet" href="Styles/style.css">
+</head>
+<body>
+    <header>
+        <h1>Interactive Web Experience</h1>
+        <button id="theme-toggle">Toggle Dark Mode</button>
+    </header>
+
+    <section id="faq-section">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-item">
+            <h3 class="faq-question">Which is the fastest car in the world?</h3>
+            <p class="faq-answer">The Koenigsegg Jesko Absolut is widely considered the fastest production car in the world, with a theoretical top speed exceeding 310 mph (499 km/h)</p>
+        </div>
+        <div class="faq-item">
+            <h3 class="faq-question">How much does it cost?</h3>
+            <p class="faq-answer">The car costs an approximate Ksh. 300 million</p>
+        </div>
+    </section>
+
+    <section id="form-section">
+        <h2>Contact Form</h2>
+        <form id="contact-form" novalidate>
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your Name">
+                <span class="error" id="name-error"></span>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Your Email">
+                <span class="error" id="email-error"></span>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Your Password">
+                <span class="error" id="password-error"></span>
+            </div>
+            <button type="submit">Submit</button>
+            <div id="form-message"></div>
+        </form>
+    </section>
+
+    <script src="Scripts/script.js"></script>
+</body>
+</html>
